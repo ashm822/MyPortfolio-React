@@ -10,14 +10,14 @@ class Resume extends React.Component {
             showSkills: false
   }
 
-  toggle = e => this.setState({ showSkills: !this.state.showSkills });
+  toggle = () => this.setState({ showSkills: !this.state.showSkills });
 
     render() {
         return(
 
           <Spring
-            from={{ opacity: 0, marginTop: -500}}
-            to={{ opacity: 1, marginTop: 0}}            
+            from={{ opacity: 0, marginRight: 500}}
+            to={{ opacity: 1, marginLeft: 0}}            
              >
 
              {props => (
@@ -93,23 +93,19 @@ class Resume extends React.Component {
               </div>
             </Col>
           </Row>
-          
-
-          <button toggle={this.toggle} className="btn btn-info center">Show More </button>
-
-          <Transition
-          items={this.state.ShowSkills}
-          from={{ opacity: 0 }}
-          enter={{ opacity: 1 }}
-          leave={{ opacity: 0 }}
-          >
-            {show => show && (props => (
-              <Animated.div style={props}>
-                <Skills />
-              </Animated.div>
-            ))}
-
-          </Transition>
+          <button toggle={this.toggle} className="btn btn-primary justify-content-center">Show More </button>
+            <Transition
+              items={this.state.ShowSkills}
+              from={{ opacity: 0 }}
+              enter={{ opacity: 1 }}
+              leave={{ opacity: 0 }}
+            >
+              {show => show && (props => (
+                <Animated.div style={props}>
+                  <Skills />
+                </Animated.div>
+              ))}
+            </Transition>
               
            </div>
         </div>
