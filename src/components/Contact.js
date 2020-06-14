@@ -21,8 +21,8 @@ class Contact extends Component {
           
 
             <Spring
-            from={{ opacity: 0, marginTop: -500}}
-            to={{ opacity: 1, marginTop: 0}}            
+            from={{ opacity: 0, marginRight: -1000, transform:'translate3d(0,-40px,0)'}}
+            to={{ opacity: 1, marginRight: 0, transform: 'translate3d(0,0px,0)'}}            
              >
 
              {props => (
@@ -36,7 +36,8 @@ class Contact extends Component {
 
           <div class="page-content">
               <Row>
-                  <div class="col-sm-6 col-md-6">
+                  <div class="col-sm-6 col-md-6 wow fadeInLeft animated
+                    fadeInLeft; animation-delay: 0.5s;">
                     <div class="block-title">
                       <h3>Get in <span>Touch</span></h3>
                     </div>
@@ -81,6 +82,7 @@ class Contact extends Component {
                 </div>
 
 
+                  
                     <Form>
                       <div class="controls">
                         <div class="form-group form-group-with-icon">

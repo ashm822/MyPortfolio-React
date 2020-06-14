@@ -1,12 +1,20 @@
 import React from 'react';
 import { Container, Card, Col, Row, Input, Nav} from 'reactstrap';
-// import { Spring, Transitions, Animate }  from 'react-spring/renderprops';
+import { Spring }  from 'react-spring/renderprops';
 
 export default function Skills()  {
     return(
+
+      <Spring
+          from={{ opacity: 0}}
+          to={{ opacity: 1}}  
+          config={{ duration: 500 }}      
+        >
+       {props => (
+       <div style={props}>
+      
         
            <Row>
-               
             <div class="col-sm-6 col-md-6 col-lg-6">
               <div class="block">
                 <div class="block-title">
@@ -69,6 +77,11 @@ export default function Skills()  {
                </div>
               </div>
              </Row>
+             </div>
+               
+           )}
+
+      </Spring>
 
     )
-};
+};      

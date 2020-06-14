@@ -21,21 +21,15 @@ render() {
               <div class="section-inner start-page-content">
                 <Col className="page-header">
                   <Row>
-                    <Col className="col-sm-4 col-md-4 col-lg-4">
-                      <div class="photo">
-                        <img src={logo} alt="myphoto" />
-                      </div>
+                    <Col className="col-sm-4 col-md-4 col-lg-4">                    
+                        <img src={logo} className="photo" alt="myphoto" />                     
                     </Col>
 
                     <Col className="col-sm-8 col-md-8 col-lg-8">
                       <div class="title-block">
-                        <h1>Ashraf Madina</h1>                                              
-                          <div class="item">
-                            <div className="sp-subtitle">QA Engineer</div>
-                          </div>
-                          <div class="item">
-                            <div class="sp-subtitle">Front-end developer</div>
-                          </div>
+                        <h1>Ashraf Madina</h1>                                                                     
+                            <div className="sp-subtitle item">QA Engineer</div>
+                            <div class="sp-subtitle item">Front-end developer</div>                        
                         </div>
                      
                      <div class="social-links">
@@ -71,7 +65,7 @@ render() {
                         <li><span class="title">E-mail </span><span class="value">ash822m@gmail.com</span></li>
                         <li><span class="title">Phone </span><span class="value">(718) 555-9252</span></li>
                         <li><span class="title">Freelance </span><span class="value available">Available</span></li>
-                        <li><span class="title">Employer </span><span class="value">Asset-Map, LLC</span></li>
+                        <li><span class="title">Company </span><span class="value">Asset-Map, LLC</span></li>
                         
                       </ul>
                     </div>
@@ -80,6 +74,7 @@ render() {
               </div>
             </div>
             </div>
+
            
            )}
 
@@ -91,7 +86,7 @@ render() {
     
     
     )
-};
+  };
 }
 
 export default Home;
