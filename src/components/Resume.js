@@ -143,7 +143,7 @@ class Resume extends React.Component {
                     <h4 className="item-title">Sr. QA Engineer</h4>
                       <p className="item-period">Nov 2019 - Present</p>
                       <p className="item-small">Asset-Map, LLC</p>
-                    <p className="item-description">Implemented Automation framework, API test into SDLC. Assist in some bug fixes and debugging.</p>
+                    <p className="item-description">Implemented Automation framework. Script manual tests into selenium automation scripts</p>
                   </div>
                   </div>                                            
                 )}
@@ -173,33 +173,18 @@ class Resume extends React.Component {
           </Row>
           
           
-          <button onClick={this.toggle}  className="btn btn-primary">Show Skills</button>
-              <div  >
+          <button onClick={this.toggle} className="btn btn-primary">{this.state.showSkills ? 'Close' : 'Show Skills'}</button>
+              <div>
                   {this.state.showSkills && <Skills />}
                 
-              </div>
-              
-            {/* <Transition
-              items={this.state.showSkills}
-              from={{ opacity: 0 }}
-              enter={{ opacity: 1 }}
-              leave={{ opacity: 0 }}
-              >
-              {show => show && (props => (
-              
-                <Animated.div style={props}>
-                  <Skills  toggle={this.toggle}/>
-                </Animated.div>
-              ))}
-            </Transition>  */}
-              
-           </div>
-        </div>
+              </div>            
+            </div>
+          </div>
         </div>
     
       </div>
              )}
-        </Spring>
+      </Spring>
 
       )
     };

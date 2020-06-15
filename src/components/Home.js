@@ -1,7 +1,7 @@
 import React from 'react';
-import { Container, Card, Col, Row, Input, Nav} from 'reactstrap';
+import { Container, Col, Row } from 'reactstrap';
 import logo from '../img/Me.jpg';
-import { Spring, Transitions, Animate }  from 'react-spring/renderprops';
+import { Spring }  from 'react-spring/renderprops';
 
 class Home extends React.Component {
 
@@ -42,7 +42,7 @@ render() {
                 </Col>
 
                 <div class="page-content">
-                  <div class="row">
+                  <Row>
 
                     <div class="col-sm-6 col-md-6 col-lg-6 wow fadeInLeft animated
                     fadeInLeft; animation-delay: 0.3s;">
@@ -50,10 +50,10 @@ render() {
                         <div class="block-title">
                           <h3>About <span>Me</span></h3>
                         </div>
-                        <p>Hello! I’m Ashraf Madina. I'm a Sr. QA Engineer. I automate manual tests into automated scripts. I recently completed Bootstrap courses and pursuing full-stack developer certification.</p>
+                        <p>Hello! I’m Ashraf Madina. I'm a Sr. QA Engineer. I automate manual tests into automated scripts. I recently completed Full-Stack Developer boot camp course.</p>
                       </div>
                       <div class="download-resume">
-                        <a href="pdf\certification1.pdf" download="Madina " class="btn btn-primary" >Download Resume</a>
+                        <a href="\pdf\React_Certificate.pdf" download="Madina " class="btn btn-primary" >Download Resume</a>
                       </div>
                     </div>
 
@@ -69,7 +69,7 @@ render() {
                         
                       </ul>
                     </div>
-                  </div>
+                  </Row>
                 </div>
               </div>
             </div>
