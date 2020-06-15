@@ -33,8 +33,8 @@ render() {
                         </div>
                      
                      <div class="social-links">
-                        <a href="#"><i class="fa fa-linkedin"></i></a>
-                        <a href="#"><i class="fa fa-git"></i></a>
+                        <a href="https://www.linkedin.com/in/ashrafmadina"><i class="fa fa-linkedin"></i></a>
+                        <a href="https://github.com/ashm822"><i class="fa fa-git"></i></a>
                         <a href="#"><i class="fa fa-instagram"></i></a>
                       </div>
                     </Col>
@@ -53,7 +53,7 @@ render() {
                         <p>Hello! I’m Ashraf Madina. I'm a Sr. QA Engineer. I automate manual tests into automated scripts. I recently completed Full-Stack Developer boot camp course.</p>
                       </div>
                       <div class="download-resume">
-                        <a href="\pdf\React_Certificate.pdf" download="Madina " class="btn btn-primary" >Download Resume</a>
+                        <a href='./pdf/React_Certificate.pdf' download="Madina " class="btn btn-primary" >Download Resume</a>
                       </div>
                     </div>
 

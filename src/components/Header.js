@@ -1,38 +1,55 @@
 
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import { NavItem } from 'reactstrap';
+
+import {
+    Collapse,
+    NavbarToggler,
+    NavbarBrand,
+    Nav,
+    
+    NavItem,
+    UncontrolledDropdown,
+    DropdownToggle,
+    DropdownMenu,
+    DropdownItem,
+    NavbarText
+  } from 'reactstrap';
+
+//   const sideMenu = () => setIsOpen(!isOpen);
+
+
 
 export default function Header()  {
     return(
 
-        <div id="page" class="page">
-                    <div class="mobile-header mobile-visible">
-                        <div class="mobile-logo-container">
-                            <div class="mobile-site-title">Ashraf Madina</div>
+        <div id="page" className="page">
+                    <div className="mobile-header mobile-visible">
+                        <div className="mobile-logo-container">
+                            <div className="mobile-site-title">Ashraf Madina</div>
                         </div>
 
-                        <a class="menu-toggle mobile-visible">
-                            <i class="fa fa-bars"></i>
+                        <a className="menu-toggle mobile-visible">
+                            <i className="fa fa-bars"></i>
                         </a>
                     </div>
 
       
-                <header class="header">
-                    <div class="header-content">
-                        <div class="site-title-block mobile-hidden">
-                            <div class="site-title">Ashraf <span>Madina</span></div>
+                <header className="header">
+                    <div className="header-content">
+                        <div className="site-title-block mobile-hidden">
+                            <div className="site-title">Ashraf <span>Madina</span></div>
                         </div>
                         <div className="site-nav">
                             <ul className="site-main-menu">
                                 <NavItem>
-                                    <NavLink class="" to="home" >Home</NavLink>
+                                    <NavLink className="nav menu" to="home" >Home</NavLink>
                                 </NavItem>
                                 <NavItem>
-                                    <NavLink class="" to="resume" >Resume</NavLink>
+                                    <NavLink className="nav menu" to="resume" >Resume</NavLink>
                                 </NavItem>
                                 <NavItem>
-                                    <NavLink class="" to="contact" >Contact</NavLink>
+                                    <NavLink className="nav menu" to="contact" >Contact</NavLink>
                                 </NavItem>
                             </ul>
                         </div>

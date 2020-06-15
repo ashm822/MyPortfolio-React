@@ -170,11 +170,6 @@ textarea.form-control, textarea.form-control:focus {
   height: auto;
 }
 
-
-
-
-
-
 .form-group .help-block:after {
   content: " ";
   position: absolute;
@@ -513,11 +508,11 @@ body > footer .copyrights {
 
 .site-main-menu li {
   display: inline-block;
-  float: left;
   position: relative;
   padding: 0;
   text-align: center;
   margin-top: 33px;
+  
 }
 
 @media only screen and (min-width: 991px) {
@@ -574,7 +569,10 @@ body > footer .copyrights {
 .site-main-menu li a:hover:after,
 .site-main-menu li.active a:after {
   width: 25px;
+  color: #2196F3;
 }
+
+
 
 .menu-icon {
   display: block;
@@ -1085,7 +1083,7 @@ Contact subpage
 
   .header {
     width: 100%;
-    max-width: 320px;
+    max-width: 220px;
     height: calc(100% - 50px);
     right: 0;
     top: 50px;
@@ -1139,7 +1137,6 @@ Contact subpage
   }
 
   .mobile-site-title {
-    display: inline-block;
     float: left;
     color: #fff;
     font-size: 18px;
@@ -1237,6 +1234,7 @@ Contact subpage
     visibility: hidden;
     opacity: 0;
   }
+
 
   .site-main-menu li {
     display: block;
