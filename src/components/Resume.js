@@ -28,16 +28,16 @@ class Resume extends React.Component {
              {props => (
              <div style={props}>    
         
-          <div class="pt-page">
-            <div class="section-inner custom-page-content">
-              <div class="page-header blue">
+          <div className="pt-page">
+            <div className="section-inner custom-page-content">
+              <div className="page-header blue">
                 <h2>Resume</h2>
               </div>
 
-              <div class="page-content">
+              <div className="page-content">
                 <Row>
                     <div className="col-sm-6 col-md-6 col-lg-6">
-                            <div class="block-title">
+                            <div className="block-title">
                                 <h3>Education</h3>
                             </div>
 
@@ -50,11 +50,11 @@ class Resume extends React.Component {
                                {props => (
                                     <div style={props}>                                                             
                                 
-                                    <div class="timeline-item mb-3">
-                                        <h4 class="item-title">Front-End Developer Bootcamp</h4>
-                                        <p class="item-period">2020</p>
-                                        <p class="item-small">Nucamp Bootcamp.</p>
-                                        <p class="item-description">On-Site Bootcamp.  Acquired certification in: Bootstrap, React, ReactNative, MongoDB</p>
+                                    <div className="timeline-item mb-3">
+                                        <h4 className="item-title">Front-End Developer Bootcamp</h4>
+                                        <p className="item-period">2020</p>
+                                        <p className="item-small">Nucamp Bootcamp.</p>
+                                        <p className="item-description">On-Site Bootcamp.  Acquired certification in: Bootstrap, React, ReactNative, MongoDB</p>
                                     </div>
                                   </div>
                           
@@ -71,11 +71,11 @@ class Resume extends React.Component {
                                     <div style={props}> 
 
                      
-                        <div class="timeline-item mb-3">
-                            <h4 class="item-title">Technical courses</h4>
-                            <p class="item-period">2009</p>
-                            <p class="item-small">Queens College</p>
-                            <p class="item-description">Continued education to learn more about QA, Web development and SQL database </p>
+                        <div className="timeline-item mb-3">
+                            <h4 className="item-title">Technical courses</h4>
+                            <p className="item-period">2009</p>
+                            <p className="item-small">Queens College</p>
+                            <p className="item-description">Continued education to learn more about QA, Web development and SQL database </p>
                         </div>
                       </div>
                         

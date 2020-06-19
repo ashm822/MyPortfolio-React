@@ -7,8 +7,6 @@ body {
   min-height: 100vh; 
 
 }
-
-
  
 @keyframes fadeInLeft {
   0% {
@@ -22,18 +20,12 @@ body {
 }   
 
 .fadeInLeft {
-  -webkit-animation-name: fadeInLeft;
   animation-name: fadeInLeft;
 }
 .animated {
-  -webkit-animation-duration: 2s;
   animation-duration: 2s;
-  -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
 }
-
-
-
 
 @keyframes fadeInRight {
   0% {
@@ -56,14 +48,8 @@ body {
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
 }
-
-
-
- 
-
  
 /* ============================================================================= */
-
 
 
 html {
@@ -85,10 +71,6 @@ a {
   color: #2196F3;
   text-decoration: none;
   outline: none;
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-  -ms-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
 
@@ -436,35 +418,45 @@ body > footer .copyrights {
   height: 100px;
   background-color: transparent;
   z-index: 2;
-  -webkit-transition: all 0.2s ease-in-out;
-  -moz-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  -ms-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-}
+  
 
-.header * {
-  -webkit-transition: all 0.2s ease-in-out;
-  -moz-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  -ms-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
 }
+.smallScreenClosed {
+  display: none; }
+  .smallScreenOpen {
+   display: block;
+  }
+
+
 
 .header .header-content {
   max-width: 1032px;
   margin: 0 auto;
+  
 }
 
+
 @media only screen and (min-width: 991px) {
+  .smallScreenClosed {
+   display: block; }
+   .smallScreenOpen {
+    display: block;
+   }
   .header.sticked {
     background-color: #fff;
     height: 60px;
-    -webkit-box-shadow: 0px 3px 8px 0px rgba(0,0,0,0.1);
-    -moz-box-shadow: 0px 3px 8px 0px rgba(0,0,0,0.1);
     box-shadow: 0px 3px 8px 0px rgba(0,0,0,0.1);
+
+
   }
 }
+
+/* @media only screen and (max-width: 550px) {
+  .header.sticked {
+      display: none;
+  }
+} */
 
 .site-title-block {
   position: relative;
@@ -901,17 +893,7 @@ body > footer .copyrights {
   height: 10px;
   padding: 0;
 }
-/* Animate skills on subpage load */
-.pt-page .skill-percentage {
-  -webkit-transition: all 2s ease-in-out;
-  -moz-transition: all 2s ease-in-out;
-  -o-transition: all 2s ease-in-out;
-  -ms-transition: all 2s ease-in-out;
-  transition: all 2s ease-in-out;
-}
-.js .pt-page:not(.pt-page-current) .skill-percentage {
-  width: 0;
-}
+
 
 /*Skill 1*/
 .skill-percentage.skill-1 {
@@ -1007,51 +989,27 @@ Contact subpage
 }
 /* /Contact info */
 
-/* Contact form */
-.g-recaptcha {
-  margin-bottom: 20px;
-}
-/* / Contact form */
 
 
 
-
-
-/* ============================================================================= 
-10. Single Page Layout 
-============================================================================= */
-.single-page-content {
-  position: relative;
-  width: 100%;
-  margin: 0 auto 50px;
-  padding-top: 100px;
-  z-index: 1;
-}
-
-.single-page-content .content-area {
-  position: relative;
-  background-color: #fff;
-  overflow: hidden;
-  max-width: 1032px;
-  margin: 0 auto;
-  border-radius: 15px;
-  -webkit-box-shadow: 0px 15px 25px 0px rgba(0,0,0,0.1);
-  -moz-box-shadow: 0px 15px 25px 0px rgba(0,0,0,0.1);
-  box-shadow: 0px 15px 25px 0px rgba(0,0,0,0.1);
-}
-
-.single-page-content .content-area .page-content {
-  padding: 50px;
-}
 
 
 /* ============================================================================= 
 12. Media Queries / size adjustments
 ============================================================================= */
-
-@media only screen and (max-width: 1320px) {
-  .portfolio-grid figure {
-    width: 33.33333%;
+@media only screen and (max-width: 991px) {
+.header {
+    width: 100%;
+    max-width: 220px;
+    height: calc(100% - 50px);
+    right: 0;
+    top: 50px;
+    z-index: 1001;
+    overflow: auto;
+    background-color: #2196F3;
+    box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.2);
+    transition: all 0.44s ease-in-out;
+    
   }
 }
 
@@ -1081,6 +1039,7 @@ Contact subpage
     display: none;
   }
 
+
   .header {
     width: 100%;
     max-width: 220px;
@@ -1090,21 +1049,12 @@ Contact subpage
     z-index: 1001;
     overflow: auto;
     background-color: #2196F3;
-    -webkit-box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.2);
-    -moz-box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.2);
     box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.2);
-    -webkit-transition: all 0.44s ease-in-out;
-    -moz-transition: all 0.44s ease-in-out;
-    -o-transition: all 0.44s ease-in-out;
-    -ms-transition: all 0.44s ease-in-out;
     transition: all 0.44s ease-in-out;
+   
   }
 
   .header * {
-    -webkit-transition: all 0.44s ease-in-out;
-    -moz-transition: all 0.44s ease-in-out;
-    -o-transition: all 0.44s ease-in-out;
-    -ms-transition: all 0.44s ease-in-out;
     transition: all 0.44s ease-in-out;
   }
 
@@ -1125,8 +1075,6 @@ Contact subpage
     right: 0;
     height: 50px;
     background-color: #2196F3;
-    -webkit-box-shadow: 0px 3px 8px 0px rgba(0,0,0,0.1);
-    -moz-box-shadow: 0px 3px 8px 0px rgba(0,0,0,0.1);
     box-shadow: 0px 3px 8px 0px rgba(0,0,0,0.1);
     z-index: 1000;
   }
@@ -1324,15 +1272,6 @@ Contact subpage
     font-size: 33px;
   }
 
-  .blog-post-content {
-    padding: 0;
-    margin: 30px 0 0;
-  }
-
-  .blog-masonry.two-columns .item,
-  .blog-masonry.three-columns .item {
-    width: 100%;
-  }
 }
 
 @media only screen and (max-width: 480px) {

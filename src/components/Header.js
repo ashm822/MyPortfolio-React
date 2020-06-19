@@ -1,43 +1,43 @@
 
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-
-import {
-    Collapse,
-    NavbarToggler,
-    NavbarBrand,
-    Nav,
-    
-    NavItem,
-    UncontrolledDropdown,
-    DropdownToggle,
-    DropdownMenu,
-    DropdownItem,
-    NavbarText
-  } from 'reactstrap';
-
-//   const sideMenu = () => setIsOpen(!isOpen);
+import { NavItem } from 'reactstrap';
 
 
 
-export default function Header()  {
-    return(
 
-        <div id="page" className="page">
-                    <div className="mobile-header mobile-visible">
-                        <div className="mobile-logo-container">
-                            <div className="mobile-site-title">Ashraf Madina</div>
-                        </div>
-
-                        <a className="menu-toggle mobile-visible">
-                            <i className="fa fa-bars"></i>
-                        </a>
-                    </div>
-
+ class Header extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            isClosed: true 
+        };    
       
-                <header className="header">
-                    <div className="header-content">
-                        <div className="site-title-block mobile-hidden">
+    
+    this.toggleNav = this.toggleNav.bind(this); 
+        }
+          
+toggleNav() {
+    this.setState({isClosed : !this.state.isClosed});
+ }  
+
+ render() {
+    const closed = this.state.isClosed ? 'smallScreenClosed' : 'smallScreenOpen' ;  
+     return (   
+           
+        <div id="page" className="page">     
+            <div className="mobile-header mobile-visible">
+                <div className="mobile-logo-container">
+                    <div className="mobile-site-title">Ashraf Madina</div>
+                </div>
+                <a className="menu-toggle mobile-visible" >
+                    <i onClick={this.toggleNav}  className="fa fa-bars"> </i>
+                </a>
+            </div>
+            <div >
+                <header className={"header sticked " + closed} id="header">
+                    <div className="header-content" >
+                        <div className="collapse site-title-block mobile-hidden" >
                             <div className="site-title">Ashraf <span>Madina</span></div>
                         </div>
                         <div className="site-nav">
@@ -54,7 +54,14 @@ export default function Header()  {
                             </ul>
                         </div>
                     </div>
-               </header>
+                </header>
+                </div>
          </div>
     )
-};
+}
+ }
+
+ 
+
+
+ export default Header;

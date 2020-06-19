@@ -4,6 +4,7 @@ import Home from './components/Home';
 import Resume from './components/Resume';
 import Header from './components/Header';
 import Contact from './components/Contact';
+// import Footer from './components/Footer';
 import './App.css';
 import './index.css';
 import {
@@ -16,14 +17,15 @@ function App() {
   return (
       <Router>
         <>
-          <Header />
+          <Header />                
           <Switch>
             <Route path="/resume" component={Resume} />
             <Route path="/contact" component={Contact} />
-            <Route path="/" component={Home} />           
-          </Switch>
+            <Route path="/" component={Home} />                
+          </Switch>      
         </>
       </Router>
+     
   );
 }
 
