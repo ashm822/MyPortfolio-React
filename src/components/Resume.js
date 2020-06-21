@@ -1,7 +1,7 @@
 import React from 'react';
-import { Row, Col, Container } from 'reactstrap';
+import { Row, Col } from 'reactstrap';
 import Skills from './Skills';
-import { Transition, Animated, Spring } from 'react-spring/renderprops';
+import { Spring } from 'react-spring/renderprops';
 
 
 
@@ -73,7 +73,7 @@ class Resume extends React.Component {
                      
                         <div className="timeline-item mb-3">
                             <h4 className="item-title">Technical courses</h4>
-                            <p className="item-period">2009</p>
+                            <p className="item-period">2010</p>
                             <p className="item-small">Queens College</p>
                             <p className="item-description">Continued education to learn more about QA, Web development and SQL database </p>
                         </div>
@@ -94,7 +94,7 @@ class Resume extends React.Component {
              
                   <div className="timeline-item mb-3">
                       <h4 className="item-title">Computer Science, A.A.</h4>
-                      <p className="item-period">2007</p>
+                      <p className="item-period">2009</p>
                       <p className="item-small">LaGuardia C. College </p>
                       <p className="item-description">Graduated with associate degree in Computer Science</p>
                   </div>            

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Card, Col, Row, Input, Nav} from 'reactstrap';
+import { Row } from 'reactstrap';
 import { Spring }  from 'react-spring/renderprops';
 
 export default function Skills()  {

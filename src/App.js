@@ -4,7 +4,6 @@ import Home from './components/Home';
 import Resume from './components/Resume';
 import Header from './components/Header';
 import Contact from './components/Contact';
-// import Footer from './components/Footer';
 import './App.css';
 import './index.css';
 import {

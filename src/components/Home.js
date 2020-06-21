@@ -10,15 +10,16 @@ render() {
     return ( 
        
          <Container>
-           <Spring
+           
+            
+             <div className="pt-page">
+             <Spring
             from={{ opacity: 0, marginTop: -500}}
             to={{ opacity: 1, marginTop: 0}}            
              >
 
              {props => (
              <div style={props}>
-            
-             <div className="pt-page">
               <div className="section-inner start-page-content">
                 <Col className="page-header">
                   <Row>
@@ -50,7 +51,7 @@ render() {
                         <div className="block-title">
                           <h3>About <span>Me</span></h3>
                         </div>
-                        <p>Hello! I’m Ashraf Madina. I'm a Sr. QA Engineer. I automate manual tests into automated scripts. I recently completed bootstrap and react courses.</p>
+                        <p>Hello! I’m Ashraf Madina. I'm a Sr. QA Engineer. I automate manual tests into automated scripts with selenium. I recently completed bootstrap and react courses.</p>
                       </div>
                       <div className="download-resume">
                         <a href={pdf} download="React Resume " className="btn btn-primary" >Download Resume</a>
@@ -73,12 +74,10 @@ render() {
                 </div>
               </div>
             </div>
-            </div>
-
-           
-           )}
+            )}
 
             </Spring>
+            </div>          
            
         </Container>  
           
