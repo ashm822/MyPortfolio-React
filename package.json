@@ -2,7 +2,11 @@
   "name": "ashrafapp",
   "version": "0.1.0",
   "private": true,
-  "homepage": "index.js",
+  "homepage": ".",
+  "engines": {
+    "node": "12.9.0",
+    "npm": "6.10.2"
+  },
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
@@ -20,10 +24,6 @@
     "reactstrap": "^5.0.0"
   },
 
-  "engines": {
-    "node": "v12.9.0",
-    "npm": "6.10.2"
-  },
   
   "scripts": {
     "start": "react-scripts start",
