@@ -34,7 +34,7 @@ class Contact extends Component {
 
     const contactAlert = () =>
        alert(
-        'Messaging has not been implemented yet... sorry!'
+        'Please try back again!'
         );
 
      return (
