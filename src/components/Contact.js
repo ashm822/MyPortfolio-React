@@ -34,7 +34,7 @@ class Contact extends Component {
 
     const contactAlert = () =>
        alert(
-        'Please try back again!'
+        'Message system is not available!'
         );
 
      return (

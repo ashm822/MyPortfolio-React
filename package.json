@@ -19,6 +19,12 @@
     "react-spring": "^8.0.27",
     "reactstrap": "^5.0.0"
   },
+
+  "engines": {
+    "node": "v12.9.0",
+    "npm": "6.10.2"
+  },
+  
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
